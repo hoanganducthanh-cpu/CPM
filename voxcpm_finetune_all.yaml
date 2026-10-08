@@ -1,7 +1,7 @@
-pretrained_path: /path/to/VoxCPM-0.5B/
+pretrained_path: /path/to/VoxCPM1.5/
 train_manifest: /path/to/train.jsonl
 val_manifest: null
-sample_rate: 16000
+sample_rate: 44100
 batch_size: 16
 grad_accum_steps: 1  # Gradient accumulation steps, >1 can increase effective batch size without increasing memory
 num_workers: 2
