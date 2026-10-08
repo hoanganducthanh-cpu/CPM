@@ -1,7 +1,7 @@
-pretrained_path: /path/to/VoxCPM-0.5B/
+pretrained_path: /path/to/VoxCPM1.5/
 train_manifest: /path/to/train.jsonl
 val_manifest: null
-sample_rate: 16000
+sample_rate: 44100
 batch_size: 16
 grad_accum_steps: 1  # Gradient accumulation steps, >1 can increase effective batch size without increasing memory
 num_workers: 2
@@ -26,12 +26,12 @@ lora:
   enable_lm: true
   enable_dit: true
   enable_proj: false
-  r: 8             
-  alpha: 16           
+  r: 8               
+  alpha: 16          
   dropout: 0.0
 
 # Distribution options (optional)
 # - If distribute=false (default): save pretrained_path as base_model in lora_config.json
 # - If distribute=true: save hf_model_id as base_model (hf_model_id is required)
-# hf_model_id: "openbmb/VoxCPM-0.5B"
+# hf_model_id: "openbmb/VoxCPM1.5"
 # distribute: true
