@@ -1,0 +1,5 @@
+streamlit
+soundfile
+funasr
+torchvision
+git+https://github.com/OpenBMB/VoxCPM.git
